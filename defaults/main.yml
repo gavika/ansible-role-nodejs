@@ -1,0 +1,5 @@
+---
+# defaults file for nodejs
+nodejs_install_using_nodesource: false
+nodejs_version: "16.x"
+nodejs_install_npm_separately: false
