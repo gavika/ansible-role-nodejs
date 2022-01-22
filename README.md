@@ -30,7 +30,7 @@ Example Playbook
     nodejs_install_using_nodesource: true
     nodejs_version: "12.x"
   roles:
-    - gavika.nodejs
+    - gavika.ansible_role_nodejs
 ```
 
 License
