@@ -1,0 +1,11 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  become: true
+  tasks:
+  - name: Example assertion
+    include_role:
+      name: nodejs
+      tasks_from: init

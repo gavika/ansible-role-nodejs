@@ -1,0 +1,23 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: instance
+    image: ubuntu:20.04
+    privileged: true
+    volume_mounts:
+      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+    command: "/usr/sbin/init"
+    capabilities:
+      - SYS_ADMIN
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+    enabled: true
+scenario:
+  name: default
+verifier:
+  name: ansible
