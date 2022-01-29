@@ -3,6 +3,7 @@
     name:
       - apt-transport-https
       - gnupg2
+    update_cache: true
 
 - name: Add the NodeJS apt key
   ansible.builtin.apt_key:
